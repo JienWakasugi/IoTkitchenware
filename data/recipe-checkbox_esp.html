@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>scale and recipe</title>
+<meta name="viewport" content="width=device-width">
+    
+<meta charset="UTF-8">
+<script src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/recipe-sclae.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style-checkbox.css">
+    
+
+</head>
+    
+<body>
+<div class="box1">
+    <article class="cooking-title">
+    <h1>親子丼</h1> 
+        <p><img src="img/cooking_image.jpg" alt="Image from ESP8266"></p>
+    </article>
+</div>
+    
+    
+<div class="box2">
+    <div class="contents">
+        材料
+    </div>
+</div>
+    
+
+<div class="box3"> 
+    <div class="foods-list">
+        
+        <input type="checkbox" name = "rice" value = "spices" id="box-1"> 
+        
+            <label for="box-1"> ごはん2杯        
+                <output id="count-1">0</output>g <progress id="myProgress-1" value="0" max="300">0%</progress> 
+            </label>
+            
+                    
+        <input type="checkbox" name = "chicken" value = "spices" id="box-2">
+            <label for="box-2">鶏もも肉200g  
+                <output id="count-2">0</output>g <progress id="myProgress-2" value="0" max="200">0%</progress> 
+            </label>
+           
+
+        <input type="checkbox" id="box-3">
+            <label for="box-3">卵 3個</label>
+            
+        
+         <input type="checkbox" name = "onion" value = "spices" id="box-4">
+            <label for="box-4">玉葱 1/2個(100g) 
+                <output id="count-4">100</output>g <progress id="myProgress-4" value="0" max="100">0%</progress> 
+                <!--<p id="count-3" style="display:inline">0</p>-->
+            </label>
+        
+        <input type="checkbox" name = "foods" value = "spices" id="box-5">
+            <label for="box-5">三つ葉 1枚</label>
+        
+        <input type="checkbox" name = "water" value = "spices" id="box-6">
+        <label for="box-6">水 100cc &nbsp;
+            <output id="count-6">100</output>% <progress id="myProgress-6" value="0" max="100">0% </progress> 
+            <!--<p id="count-4" data-num="100">0</p>-->
+        </label>
+        
+         <input type="checkbox" name = "soysource" value = "soysource-bottle" id="box-7">
+            <label for="box-7">醤油 大さじ2 &nbsp;
+                <output id="count-7">100</output>% <progress id="myProgress-7" value="0" max="36">0% </progress>  
+                <!--<p id="count-5" data-num="100">0</p>--> 
+           </label>
+        
+         <input type="checkbox" name = "foods" value = "spices" id="box-8">
+            <label for="box-8">みりん 大さじ1 &nbsp;
+                <output id="count-8">0</output>% <progress id="myProgress-8" value="0" max="18">0% </progress>　
+        
+        　　</label>
+        
+         <input type="checkbox" name = "suger" value = "spices" id="box-9">
+            <label for="box-9">砂糖 大さじ1/2 &nbsp;
+                <output id="count-9">100</output>% <progress id="myProgress-9" value="0" max="4.5">0% </progress> 
+            </label>
+        
+        <input type="checkbox" name = "granule stock" value = "spices" id="box-10">
+            <label for="box-10">和風顆粒だし 小さじ1/3 &nbsp;
+                <output id="count-9">100</output>% <progress id="myProgress-10" value="0" max="1">0% </progress> 
+        </label>
+        
+    </div>
+    
+</div>
+
+    
+<div class="box6">
+    <div class="cooking_method">
+        作り方    
+    </div>
+</div>
+    
+<div class="box7">
+     <div class="cooking method">
+        <!--<h3 class="howto-ttl icon-num01">親子丼の鶏肉はまとめて煮る！</h3>-->
+ <ol> 
+    <li><p id= "procedure-1">
+        鶏肉はひと口大の削ぎ切りに、玉ねぎは薄切りにします。卵は混ぜ過ぎず、軽めに溶きほぐしておきます。</p></li>
+    
+    <li><p id="procedure-2">
+        フライパンにみりんと酒を入れて煮切り、濃口しょうゆ、薄口しょうゆ、砂糖、だし汁を加えて煮立てます。鶏肉、玉ねぎを加えて2～3分、中火で煮ます。
+    </p></li>
+    <p > <span id="min">03</span>:<span id="sec">00</span><progress id="timer-Progress" value="0" max="180"><!--0%--></progress></p> 
+     
+    <p>
+        <input type="button" id="start" value="START">
+        <input type="button" id="stop" value="STOP" disabled>
+        <input type="button" id="reset" value="RESET">
+    </p>
+ 
+    
+    
+     <!--<output id="count-10">0</output> 秒<progress id="timer-Progress" value="0" max="180">0% </progress>-->
+    <li><p　id="procedure-3">(2)に溶き卵を流し入れ、半熟状態になったら火を止めます。</p></li>
+    <li><p id="procedure-4">丼にご飯を盛り、(3)をかけます。2～3cmの幅に切った三つ葉をあしらいます。</p></li>
+        
+    
+</ol>
+       
+         
+         
+        <!--<h3 class="howto-ttl icon-num02">親子丼の卵の溶き方</h3>
+         <p></p>
+         <p></p>
+         <p></p>
+         -->
+         
+    </div>
+    </div>
+   
+
+</body>
